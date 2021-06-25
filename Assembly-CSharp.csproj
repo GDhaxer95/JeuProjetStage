@@ -49,6 +49,7 @@
      <Compile Include="Assets\AssetsJeuProjet\CameraFollow.cs" />
      <Compile Include="Assets\AssetsJeuProjet\ControlPlayer.cs" />
      <Compile Include="Assets\AssetsJeuProjet\PlayerCollision.cs" />
+     <Compile Include="Assets\EndTrigger.cs" />
      <Compile Include="Assets\GameManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Hub/Editor/5.6.7f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
