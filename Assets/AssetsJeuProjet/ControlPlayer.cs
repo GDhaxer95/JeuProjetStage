@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections;		   //
+using System.Collections.Generic; // Inclure les librairies Unity
+using UnityEngine;               //
 
-public class ControlPlayer : MonoBehaviour {
-	public float doubleTapThreshold = 0.5f;
+public class ControlPlayer : MonoBehaviour { //instancie la classe ControlPlayer
+	public float doubleTapThreshold = 0.5f;  
 	public float impulse = 10.0f;
 	public float speed = 1.0f;
 	private Rigidbody2D _body;
@@ -11,7 +11,8 @@ public class ControlPlayer : MonoBehaviour {
 	private Vector2 _impulses = Vector2.zero;
 	private float _timeStampLeft = 0f, _timeStampRight = 0f;
 	private bool _isOnGround = false;
-	void OnCollisionEnter2D(Collision2D coll) // We check whether a collision has been detected between the player and other objects using the built-in function OnCollisionEnter2D.
+	void OnCollisionEnter2D(Collision2D coll) // We check whether a collision has been detected between the player and other objects using the built-in function
+											 //OnCollisionEnter2D.
 	{
 		if (coll.collider.tag == "ground") //If the other object has a tag called ground then the variable called isOnground is set to true.
 			_isOnGround = true;
